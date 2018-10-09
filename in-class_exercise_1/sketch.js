@@ -5,7 +5,7 @@ function setup() {
   // put setup code here --> this runs once upon launch
 
   createCanvas(500, 500);
-  background(0);
+  // background(150);
   console.log("in setup function");
   frameRate(5);
 }
@@ -14,6 +14,7 @@ function setup() {
 function draw() {
   // console.log("in draw function");
   // put drawing code here --> this loops every frame
+  background(150,0,20,0);
   fill(0, 255, 0);
 	stroke(255, 255, 255);
 	ellipse(100, 100, 80, 80);
