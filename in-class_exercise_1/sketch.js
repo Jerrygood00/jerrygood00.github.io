@@ -7,6 +7,7 @@ function setup() {
   createCanvas(500, 500);
   background(0);
   console.log("in setup function");
+  frameRate(5);
 }
 
 
