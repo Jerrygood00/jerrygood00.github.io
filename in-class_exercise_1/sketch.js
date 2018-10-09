@@ -6,11 +6,12 @@ function setup() {
 
   createCanvas(500, 500);
   background(0);
+  console.log("in setup function");
 }
 
 
 function draw() {
-  rect(500, 500);
+  // console.log("in draw function");
   // put drawing code here --> this loops every frame
 }
 
