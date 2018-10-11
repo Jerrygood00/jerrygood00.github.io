@@ -17,7 +17,7 @@ function draw() {
   background(150,0,20,0);
   fill(0, 255, 0);
 	stroke(255, 255, 5);
-	ellipse(100, 100, 80, 80);
+	ellipse(200, 200, 80, 80);
 
 	// make transparent rectangle
 	// fourth argument will define transparency
