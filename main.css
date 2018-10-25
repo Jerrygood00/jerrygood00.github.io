@@ -19,7 +19,45 @@ a {
 color: #69CBBB;
 text-decoration: none;
 }
+
+
+
 p{
     color: dimgray;
 
 }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
+/* Variables */
+    :root {
+
+    }
+
+/* Common */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Kavivanar', cursive;
+    }
+    a {
+        text-decoration: none;
+        color: red;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Table of Contents */
+    table.contents {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    table.contents tr td:first-child {
+        text-align: left;
+    }
+
