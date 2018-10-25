@@ -1,7 +1,6 @@
 body {
   margin: 30px auto;
   max-width: 1000px;
-  font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   padding: 30px 20px;
   text-align: center;
@@ -44,20 +43,11 @@ p{
     }
     a {
         text-decoration: none;
-        color: red;
+        color: blue;
     }
     a:hover {
         text-decoration: underline;
     }
 
-/* Table of Contents */
-    table.contents {
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    table.contents tr td:first-child {
-        text-align: left;
-    }
+
 
