@@ -1,5 +1,4 @@
-var xoffset = 50;
-var yoffset = 50;
+
 var inc = 10;
 var a = 10;
 var c = 0;
@@ -11,25 +10,19 @@ var minD = .09;
 
 function setup() {
   createCanvas(1000, 1000);
-  // background(sin(a)*1000.0 - 900);
-  //noLoop();
+
 }
 
 function draw() {
   background(sin(a)*1000.0 - 900);
-   // if (s===59) {
-     // background(50);
-// }
+
    var s = second();
    var m = minute();
    var h = hour();
 
-  // draw a face!
-  // ellipse(xoffset,yoffset, 40, 40);
-  // ellipse(xoffset+100,yoffset, 40, 40);
-  // arc(xoffset+50, yoffset+50, 100, 50, 0, PI);
+
   push();
-   //rotate(.1)
+
   translate(width/2,height/2) // shift it over
   fill(255);
 
@@ -47,12 +40,10 @@ function draw() {
     inc = -inc;
     a = -a;
   }
- // drawhead();
+
  pop();
 //////////////////////////
  push();
- // var f = 0;
-   //rotate(.1)
   translate(width/2,height/2); // shift it over
   fill(random(cos(a)*300.0 - 100));
 
@@ -67,7 +58,7 @@ function draw() {
     inc = -inc;
     a = -a;
   }
- // drawhead();
+
  pop();
 
 
@@ -79,15 +70,11 @@ function draw() {
 
  secs+= secD;
  mins+= minD;
- // fill(255);
 
- // text('Current second: \n' + s, 5, 50);
- // text('Current minute: \n' + m, 5, 90);
- // text('Current hour:\n' + h, 5, 130);
   }
 
 
 function drawhead() {
-  fill(255);
+  fill(random(cos(a)*300.0 - 100));
   rect(-25,-25,50,50);
 }
