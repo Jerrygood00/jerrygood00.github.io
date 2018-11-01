@@ -9,7 +9,7 @@ var secD = .08;
 var minD = .09;
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(500, 500);
 
 }
 
