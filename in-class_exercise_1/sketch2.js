@@ -47,7 +47,7 @@ function draw() {
     inc = -inc;
     a = -a;
   }
- drawhead();
+ // drawhead();
  pop();
 //////////////////////////
  push();
@@ -67,30 +67,19 @@ function draw() {
     inc = -inc;
     a = -a;
   }
- drawhead();
+ // drawhead();
  pop();
- //scaling and mapping time to RGB color values
-//  var scaledCS = map(s,0,60,0,255);
-//  var scaledXS = map(s,0,60,0,width);
-//
-//  var scaledMS = map(m,0,60,0,height);
-//
-// push();
-// fill(scaledCS,0,0);
-// translate(scaledMS,400);
-//  rect (0,0,50,50);
-//  ellipse(10,0,10,10);
-// pop(0);
 
 
- // push();
- // translate(mouseX,mouseY);
- //  drawhead();
- // pop();
+
+ push();
+ translate(mouseX,mouseY);
+  drawhead();
+ pop();
 
  secs+= secD;
  mins+= minD;
- fill(255);
+ // fill(255);
 
  // text('Current second: \n' + s, 5, 50);
  // text('Current minute: \n' + m, 5, 90);
@@ -99,6 +88,6 @@ function draw() {
 
 
 function drawhead() {
-  noFill();
-  rect(10,10);
+  fill(255);
+  rect(-25,-25,50,50);
 }
