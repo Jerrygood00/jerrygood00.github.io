@@ -14,7 +14,7 @@ let documentActive = false; // we need to make sure they engage with page before
 
 function setup() {
 
-  vid_0 = createVideo(['Media/way.mp4']);;
+  vid_0 = createVideo(['Media/thanos.mp4']);;
   vid_0.size(400, 300);
 
   vid_0.mouseOver(playVid_0);
@@ -35,11 +35,7 @@ function setup() {
   vid_2.mouseOut(pauseVid_2);
 
 
-  vid_3 = createVideo(['Media/bongo.mp4']);;
-  vid_3.size(400, 300);
 
-  vid_3.mouseOver(playVid_3);
-  vid_3.mouseOut(pauseVid_3);
 }
 
 
@@ -82,17 +78,6 @@ function pauseVid_2() {
   vid_2_playing = false;
 }
 
-function playVid_3() {
-  if (documentActive) {
-    vid_3.loop();
-    vid_3_playing = true;
-  }
-}
-
-function pauseVid_3() {
-  vid_3.pause();
-  vid_3_playing = false;
-}
 
 function mousePressed() {
   documentActive = true; // since they have clicked, now we can play
