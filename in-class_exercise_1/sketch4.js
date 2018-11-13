@@ -21,14 +21,14 @@ function setup() {
   vid_0.mouseOut(pauseVid_0);
 
 
-  vid_1 = createVideo(['Media/continue.mp4']);;
+  vid_1 = createVideo(['Media/bird.mp4']);;
   vid_1.size(400, 300);
 
   vid_1.mouseOver(playVid_1);
   vid_1.mouseOut(pauseVid_1);
 
 
-  vid_2 = createVideo(['Media/bongo.mp4']);;
+  vid_2 = createVideo(['Media/smash.mp4']);;
   vid_2.size(400, 300);
 
   vid_2.mouseOver(playVid_2);
