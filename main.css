@@ -22,8 +22,8 @@ text-decoration: none;
 
 
 p{
+    text-align: left;
     color: dimgray;
-
 }
 /* Fonts */
     @import url('https://fonts.googleapis.com/css?family=Kavivanar');
