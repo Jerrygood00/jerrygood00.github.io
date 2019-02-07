@@ -194,9 +194,9 @@
 //        arWorldRoot.add( mesh ); //instead of adding mesh to the scene right away we add only when the target is detected
         //end icosphere code
         ///////////////////////////////////////////////////////////
-        geometry = new THREE.CubeGeometry(200, 200, 200);
-        material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
-        mesh = new THREE.Mesh(geometry, material);
+//        geometry = new THREE.CubeGeometry(200, 200, 200);
+//        material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+//        mesh = new THREE.Mesh(geometry, material);
 //        scene.add(mesh);
 
         
@@ -216,21 +216,21 @@
         
         ///////////////////////////////////////////////////////////
         // add a fbx model with animation
-        var loader = new THREE.FBXLoader();
-        loader.load( '../../data/data/handGLoptB.fbx', function ( object ) {
-            object.mixer = new THREE.AnimationMixer( object );
-            mixers.push( object.mixer );
-            var action = object.mixer.clipAction( object.animations[ 0 ] );
-            action.play();
-            object.traverse( function ( child ) {
-                if ( child.isMesh ) {
-                    child.castShadow = true;
-                    child.receiveShadow = true;
-                }
-            } );
-            object.scale.set(.02, .02, .02);
-            arWorldRoot.add( object );
-        } );
+//        var loader = new THREE.FBXLoader();
+//        loader.load( '../../data/data/handGLoptB.fbx', function ( object ) {
+//            object.mixer = new THREE.AnimationMixer( object );
+//            mixers.push( object.mixer );
+//            var action = object.mixer.clipAction( object.animations[ 0 ] );
+//            action.play();
+//            object.traverse( function ( child ) {
+//                if ( child.isMesh ) {
+//                    child.castShadow = true;
+//                    child.receiveShadow = true;
+//                }
+//            } );
+//            object.scale.set(.02, .02, .02);
+//            arWorldRoot.add( object );
+//        } );
         //end fbx code
         ///////////////////////////////////////////////////////////
         
@@ -247,7 +247,9 @@
          };
 
          var textureLoader = new THREE.TextureLoader( manager );
-         var texture = textureLoader.load( '../../data/data/UV_Grid_Sm.jpg' );
+         var texture = textureLoader.load( '../../data/data/male02/01_-_Default1noCulling.JPG' );
+        var texture1 = textureLoader.load( '../../data/data//male02/male-02-1noCulling.JPG' );
+        var texture2 = textureLoader.load( '../../data/data//male02/orig_02_-_Defaul1noCulling.JPG' );
 
          // obj model
          var onProgress = function ( xhr ) {
@@ -261,7 +263,7 @@
          };
 
          var loader = new THREE.OBJLoader( manager );
-         loader.load( '../../data/data/male02/Bigmax_White_OBJ.obj', function ( object ) {
+         loader.load( '../../data/data/male02/male02.obj', function ( object ) {
 
              object.traverse( function ( child ) {
 
@@ -273,7 +275,7 @@
 
              } );
 
- //					object.position.y = - 95;
+// 					object.position.x = -20;
  //					scene.add( object );
              object.scale.set(.02, .02, .02);
              arWorldRoot.add( object );
