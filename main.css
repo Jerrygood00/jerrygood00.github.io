@@ -2,7 +2,7 @@ body {
   margin: 50px auto;
 /*  max-width: auto;*/
   line-height: 1.5;
-  padding: 40px 50px;
+  padding: 40px 300px;
   text-align: center;
 }
 
@@ -53,7 +53,9 @@ li a:hover {
 
 p{
     text-align: left;
-    color: black;
+    color: gray;
+    font-size: 14px
+    
 }
 
 .dropbtn {
