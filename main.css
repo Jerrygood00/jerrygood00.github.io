@@ -1,8 +1,8 @@
 body {
-  margin: 30px auto;
-  max-width: 1000px;
+  margin: 50px auto;
+/*  max-width: auto;*/
   line-height: 1.5;
-  padding: 30px 20px;
+  padding: 40px 50px;
   text-align: center;
 }
 
@@ -16,7 +16,7 @@ h2 {
 }
 
 h4 {
-    text-align: left
+    text-align: center;
 }
 a {
 color: #69CBBB;
