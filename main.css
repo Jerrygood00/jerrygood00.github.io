@@ -1,8 +1,8 @@
 body {
   margin: 50px auto;
-/*  max-width: auto;*/
+  max-width: auto;
   line-height: 1.5;
-  padding: 40px 200px;
+  padding: 40px 100px;
   text-align: center;
 }
 
@@ -60,6 +60,7 @@ li a:hover {
 */
 
 p{
+    padding: 0px 90px;
     text-align: left;
     color: gray;
     font-size: 14px
