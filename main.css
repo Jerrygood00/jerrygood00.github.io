@@ -17,12 +17,20 @@ h2 {
 
 h4 {
     text-align: center;
+    padding: 40px 80px;
 }
 a {
 color: #69CBBB;
-text-decoration: none;
+text-decoration: center;
 }
 
+img {
+    padding: 20px 80px;
+}
+
+iframe {
+    padding: 0px 80px;
+}
 /*
 ul {
   list-style-type: none;
