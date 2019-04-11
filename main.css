@@ -25,11 +25,11 @@ text-decoration: center;
 }
 
 img {
-    padding: 20px 80px;
+    padding: 0px 80px;
 }
 
 iframe {
-    padding: 0px 80px;
+    padding: 0px 40px;
 }
 /*
 ul {
