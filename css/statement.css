@@ -44,6 +44,10 @@ img {
   opacity: 0.5;
 }
 
+.dropdown-contact {
+    opacity: 1;
+}
+
 
 .dropdown-content {
   display: none;
