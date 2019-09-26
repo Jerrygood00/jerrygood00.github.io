@@ -1,0 +1,124 @@
+body {
+  margin: 50px auto;
+  max-width: auto;
+  line-height: 1.5;
+  padding: 40px 100px;
+  text-align: center;
+}
+
+h1 {
+  padding: 40px 80px 10px;
+  text-align: center;
+}
+
+h2 {
+    padding: 10px 0px 10px 0px;
+}
+
+h4 {
+    text-align: center;
+    padding: 40px 80px 10px;
+}
+
+img {
+    align-self: auto;
+    position: relative;
+    padding: 40px 80px;
+}
+
+iframe {
+    align-self: auto;
+    position: relative;
+    padding: 40px 40px;
+}
+
+p{
+    padding: 0px 90px;
+    text-align: left;
+    color: gray;
+    font-size: 14px
+    
+}
+
+.word-adjust {
+    position: absolute;
+    padding: 100px 100px 100px 300px;
+    font-size: 100px;
+    color: black;
+}
+
+.gif-adjust {
+    padding: 100px;
+    position:absolute;
+    float: center;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: dimgray;
+}
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
+
+
+/* Common */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Helvetica';
+    }
+    a {
+        color: blue;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+
+
+
