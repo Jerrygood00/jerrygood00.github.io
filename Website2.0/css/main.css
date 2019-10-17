@@ -1,0 +1,151 @@
+body {
+    padding: 60px 40px;
+    box-sizing: border-box;
+    background-color: black;
+    position: relative;
+	overflow: hidden;
+}
+
+.container {
+  display: grid;
+/*   grid-template-columns: repeat(3 ,1fr); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 20px;
+  grid-template-areas: "header header header header header header" "menu main main main main main" "footer footer footer footer footer footer";
+}
+
+.container div {
+    padding: 2rem;
+    color: white;
+}
+
+.header {
+  grid-area: header;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.menu {
+  grid-area: menu;
+  font-size: 18px;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+#img1, #img2, #img3, #img4 {
+    position:fixed;
+    z-index: 0;
+    animation-name: test;
+    animation-duration: 15s;
+    opacity:0;
+}
+#img2 {
+    animation-delay: 5s;
+    -webkit-animation-delay:5s
+}
+#img3 {
+    animation-delay:10s;
+    -webkit-animation-delay:10s
+}
+#img4 {
+    animation-delay:15s;
+    -webkit-animation-delay:15s
+}
+
+@-webkit-keyframes test {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+    }
+}
+@keyframes test {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+    }
+}
+
+
+
+
+
+ul {
+   list-style: none;
+}
+
+li {
+    margin: 0 0 20px;
+}
