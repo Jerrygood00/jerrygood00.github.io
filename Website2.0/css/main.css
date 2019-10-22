@@ -1,9 +1,8 @@
 body {
-    padding: 60px 40px;
+    padding: 10px 40px;
     box-sizing: border-box;
     background-color: black;
-    position: relative;
-	overflow: hidden;
+    align-content: center;
 }
 
 .container {
@@ -13,17 +12,21 @@ body {
   grid-template-rows: 200px 200px 200px;
   grid-gap: 20px;
   grid-template-areas: "header header header header header header" "menu main main main main main" "footer footer footer footer footer footer";
+  position: fixed;
+
 }
 
+
 .container div {
-    padding: 2rem;
-    color: white;
+  padding: 2rem;
+  color: white;
 }
 
 .header {
   grid-area: header;
   font-size: 18px;
-  flex-wrap: wrap;
+  justify-self: end;
+  word-spacing: 15px;
 }
 
 .menu {
@@ -36,10 +39,13 @@ body {
 
 .main {
   grid-area: main;
+    justify-self: end;
+  
 }
 
 .footer {
-  grid-area: footer
+  grid-area: footer;
+  place-self: center;
 }
 
 .fade-in {
@@ -98,8 +104,7 @@ body {
 
 
 #img1, #img2, #img3, #img4 {
-    position:fixed;
-    z-index: 0;
+    animation: infinite;
     animation-name: test;
     animation-duration: 15s;
     opacity:0;
@@ -125,6 +130,7 @@ body {
         opacity: 1;
     }
     100% {
+        opacity: 0;
     }
 }
 @keyframes test {
@@ -135,6 +141,7 @@ body {
         opacity: 1;
     }
     100% {
+        opacity: 0;
     }
 }
 
@@ -147,5 +154,16 @@ ul {
 }
 
 li {
+    padding: 10px;
     margin: 0 0 20px;
+}
+
+.fixed-li {
+    display: inline;
+    
+}
+
+
+img {
+    padding: none;
 }

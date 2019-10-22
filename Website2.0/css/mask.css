@@ -1,0 +1,109 @@
+body {
+    background: url(https://media.giphy.com/media/aFTt8wvDtqKCQ/giphy.gif);
+    background-position: 50% 50%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px 300px 30px;
+  grid-gap: 20px;
+  grid-template-areas: "main side1 side1 side1" "main side2 side2 side2" "main side3 side3 side3" "main side4 side4 side4";
+}
+
+.main {
+  background: url(https://media.giphy.com/media/3o7aCZDlmQZLe4Q4V2/giphy.gif);
+  background-position: center;
+  grid-area: main;
+  padding: 2rem;
+}
+
+.side1 {
+  background: url(https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif);
+  box-shadow: 10px 15px 90px #ffff;
+  grid-area: side1;
+  padding: 2rem;
+}
+
+.side2 {
+  grid-area: side2;
+  padding: 2rem;
+}
+
+.side3 {
+  grid-area: side3;
+  padding: 2rem;
+}
+
+.side4 {
+  background: url(https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif);
+  grid-area: side4;
+  background-color: pink;
+  padding: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+img {
+    width: 600px;
+    height: auto;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size:1.8vw;
+}
