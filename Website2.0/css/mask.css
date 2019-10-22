@@ -34,6 +34,7 @@ body {
 
 .side3 {
   grid-area: side3;
+  align-self: flex-start;
   padding: 2rem;
 }
 
@@ -99,11 +100,13 @@ body {
 }
 
 img {
-    width: 600px;
+    width: 800px;
     height: auto;
 }
 
 p {
+  color: white;
+  text-align: center;
   font-family: 'Roboto Slab', serif;
-  font-size:1.8vw;
+  font-size: 100px;
 }
