@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
 }
 
+/*   grid box */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -13,6 +14,7 @@ body {
   grid-template-areas: "main side1 side1 side1" "main side2 side2 side2" "main side3 side3 side3" "main side4 side4 side4";
 }
 
+/*   left box*/
 .main {
   background: url(https://media.giphy.com/media/3o7aCZDlmQZLe4Q4V2/giphy.gif);
   background-position: center;
@@ -20,6 +22,7 @@ body {
   padding: 2rem;
 }
 
+/*  right top first  */
 .side1 {
   background: url(https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif);
   box-shadow: 10px 15px 90px #ffff;
@@ -27,17 +30,20 @@ body {
   padding: 2rem;
 }
 
+/*  right second  */
 .side2 {
   grid-area: side2;
   padding: 2rem;
 }
 
+/*  right third  */
 .side3 {
   grid-area: side3;
   align-self: flex-start;
   padding: 2rem;
 }
 
+/*  right fourth  */
 .side4 {
   background: url(https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif);
   grid-area: side4;
@@ -45,6 +51,7 @@ body {
   padding: 2rem;
 }
 
+/*  content fade in animation */
 .fade-in {
   animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;

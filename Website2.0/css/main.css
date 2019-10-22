@@ -4,10 +4,9 @@ body {
     background-color: black;
     align-content: center;
 }
-
+/*   grid box */
 .container {
   display: grid;
-/*   grid-template-columns: repeat(3 ,1fr); */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px;
   grid-gap: 20px;
@@ -16,7 +15,7 @@ body {
 
 }
 
-
+/* 2rem = 32px */
 .container div {
   padding: 2rem;
   color: white;
@@ -48,6 +47,7 @@ body {
   place-self: center;
 }
 
+/* content fade in animation + keyframe */
 .fade-in {
   animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;
@@ -102,7 +102,7 @@ body {
   }
 }
 
-
+/*  Fidget spinner fade in in different time*/
 #img1, #img2, #img3, #img4 {
     animation: infinite;
     animation-name: test;
