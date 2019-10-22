@@ -10,7 +10,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px;
   grid-gap: 20px;
-  grid-template-areas: "header header header header header header" "menu main main main main main" "footer footer footer footer footer footer";
+  grid-template-areas: "header header header header" "menu main main main" "footer footer footer footer";
   position: fixed;
 
 }
@@ -46,6 +46,8 @@ body {
   grid-area: footer;
   place-self: center;
 }
+
+
 
 /* content fade in animation + keyframe */
 .fade-in {
@@ -102,7 +104,7 @@ body {
   }
 }
 
-/*  Fidget spinner fade in in different time*/
+/*  Indicate each gif with id to play fade in animation in different time*/
 #img1, #img2, #img3, #img4 {
     animation: infinite;
     animation-name: test;
