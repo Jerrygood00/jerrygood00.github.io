@@ -52,7 +52,7 @@ message6Image = loadImage("message6.png");
 message7Image = loadImage("message7.png");
 message8Image = loadImage("message8.png");
 message9Image = loadImage("message9.png");
-// backgroundImage = loadImage("Subway.jpg");
+backgroundImage = loadImage("Subway.jpg");
 endImage = loadImage("end.png");
 
 /*! p5.play loading borders around the canvas */
@@ -136,7 +136,7 @@ function draw() {
   volume = constrain(volume, 0, 1);
   song.amp(volume);
 
-  // image(backgroundImage,0,0);
+  image(backgroundImage,0,0);
 
 /*! When sprites pass through the border, they reappear from the opposite side */
   for(var i=0; i<allSprites.length; i++) {
