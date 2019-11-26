@@ -31,7 +31,7 @@ function preload() {
 
 function setup() {
 
-createCanvas(1300,1300);
+createCanvas(1300,530);
 
 /*! loop sound */
 song.loop();
